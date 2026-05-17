@@ -176,7 +176,6 @@ with st.sidebar:
     st.write("**Akurasi Gabungan:** 90%+")
     st.write("**Metode:** Weighted Average Ensemble")
     st.markdown("---")
-    st.info("✨ **Keunggulan Ensemble**\n\n✅ Akurasi tinggi (Model A)\n✅ Precision tinggi (Model B)\n✅ Lebih robust & akurat")
 
 st.markdown('<div class="glass-card">', unsafe_allow_html=True)
 
@@ -268,7 +267,7 @@ if img is not None:
             with col_m3:
                 st.markdown('<div class="metric-card"><div class="metric-value">♻️</div><div class="metric-label">Dapat Didaur Ulang</div></div>', unsafe_allow_html=True)
             st.progress(confidence/100)
-            st.success("✅ **Masukkan ke tempat sampah ANORGANIK** (Kuning / Abu-abu)")
+            st.success("**Masukkan ke tempat sampah ANORGANIK** (Kuning / Abu-abu)")
         else:
             confidence = float((1 - ensemble_prediction) * 100)
             with col_m1:
@@ -278,7 +277,7 @@ if img is not None:
             with col_m3:
                 st.markdown('<div class="metric-card"><div class="metric-value">🍂</div><div class="metric-label">Kompos / Basah</div></div>', unsafe_allow_html=True)
             st.progress(confidence/100)
-            st.warning("✅ **Masukkan ke tempat sampah ORGANIK** (Hijau)")
+            st.warning(" **Masukkan ke tempat sampah ORGANIK** (Hijau)")
         
         st.balloons()
 
