@@ -1,7 +1,8 @@
 #  Smart Waste Final
 
 Klasifikasi sampah organik vs anorganik menggunakan ResNet50 & Ensemble Learning.
-
+## Dataset
+https://www.kaggle.com/datasets/techsash/waste-classification-data?resource=download
 ##  Anggota Kelompok
 | Wildan Sani | Model Development |
 | Ilham Nurhakim | Literature & Documentation |
